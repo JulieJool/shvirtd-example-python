@@ -61,6 +61,12 @@ See 'snap info docker' for additional versions.
 
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
+### Решение ###   
+![3.1](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/3.1.jpg)    
+![3.2](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/3.2.jpg)    
+![3.3](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/3.3.jpg)    
+
+
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
 2. Подключитесь к Вм по ssh и установите docker.
@@ -68,6 +74,16 @@ See 'snap info docker' for additional versions.
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
+
+### Решение ###   
+![4.1](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.1.png)    
+![4.2](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.2.png)    
+![4.3](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.3.png)    
+![4.4](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.4.png)    
+![4.5](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.5.png)    
+![4.6](https://github.com/JulieJool/shvirtd-example-python/blob/main/img/4.6.png)    
+
+
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
